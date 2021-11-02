@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alivio</title>
+    <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a class="header__logo"><img src="./img/Logo.png" alt="Alivio_logo"></a>
+            <div class="header__memu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li><a data-goto=".start__page" href="" class="menu__link">Why Alivio</a></li>
+                        <li><a data-goto=".page2" href="" class="menu__link">Solutions</a></li>
+                        <li><a data-goto=".page3" href="" class="menu__link">Community</a></li>
+                        <li><a data-goto=".page4" href="" class="menu__link">Pricing</a></li>
+                        <li><a data-goto="#" href="#" id="loginBtn" class="menu__link">Sign in</a></li>
+                        <button id="trialBtn" class="trial">Start trial</button>
+
+                        <div id="trialModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <form action="https://formspree.io/f/xayagoyk" method="POST" class=" decor">
+                                    <div class="form-left-decoration"></div>
+                                    <div class="form-right-decoration"></div>
+                                    <div class="circle"></div>
+                                    <div class="form-inner">
+                                        <h3>Trial subscription</h3>
+                                        <input name="name" type="text" placeholder="Your name">
+                                        <input name="second Name" type="text" placeholder="Your Surname">
+                                        <input type="email" name="email" placeholder="Your Email">
+                                        <input type="tel" name="tel" placeholder="Phone number">
+                                        <textarea name="massage" placeholder="Message..." rows="3"></textarea>
+                                        <button class="submit">Trial</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div id="loginModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <form action="" class="ui-form">
+                                    <h3>Войти на сайт</h3>
+                                    <div class="form-row">
+                                        <input type="text" id="email" required autocomplete="off"><label
+                                            for="email">Email</label>
+                                    </div>
+                                    <div class="form-row">
+                                        <input type="password" id="password" required autocomplete="off"><label
+                                            for="password">Password</label>
+                                    </div>
+                                    <button class="submit">Войти</button>
+                                </form>
+                            </div>
+                        </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <!--  parent -->
+            <div class="start__page">
+                <!--  flex-container  -->
+                <div class="start__page__row">
+                    <!--  flex-element  -->
+                    <div class="start__page__element start__page__element">
+                        <!--  content  -->
+                        <div class="start__page__content">
+                            <div class="start__page__title">
+                                <h3>Be aware, Manage well.</h3>
+                            </div>
+                            <div class="start__page__text">Everyone experiences in different ways. Let Alivio guide you,
+                                in a
+                                personalized journal
+                                experience, to overcome your stress.
+                            </div>
+                            <button class="send_me" name="send" type="button">Find Your Way</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page2">
+            <!--  parent -->
+            <div class="solution">
+                <!--  flex-container  -->
+                <div class="solution__row">
+                    <!--  flex-element  -->
+                    <div class="solution__element solution__element_1">
+                        <!--  content  -->
+                        <div class="solution_content">
+                            <div class="solution__title">
+                                How it works
+                            </div>
+                            <div class="solution__text">
+                                <h3>Understand & Release the stress in 3 steps</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  flex-element  -->
+                    <div class="solution__element solution__element_2">
+                        <!--  content  -->
+                        <div class="solution__content">Alivio offers as many journals it takes, tackling different areas
+                            such as anxiety, overwhelmedness, sadness, or anger, and a variety of personal causes, to
+                            help
+                            you become aware of your emotions, and guide you in how to manage stress.</div>
+                    </div>
+                </div>
+            </div>
+            <!--  parent -->
+            <div class="step">
+                <!--  flex-container  -->
+                <div class="step__row">
+                    <!--  flex-element  -->
+                    <div class="step__element step__element_1">
+                        <!--  content  -->
+                        <div class="step__content">
+                            <div class="step__number">
+                                <img src="./img/01.png" alt="step1">
+                                <span class="title">Personalize</span>
+                            </div>
+                            <div class="step__text">Answer a quick survey about how you express yourself, what causes
+                                you
+                                stress, and what area would you like to work on. This way, we can fully personalize your
+                                journal!</div>
+                            <div class="step__image"><img src="./img/Personalize.png" alt="Personalize"
+                                    class="step__image">
+                            </div>
+                        </div>
+                    </div>
+                    <!--  flex-element  -->
+                    <div class="step__element step__element_2">
+                        <!--  content  -->
+                        <div class="step__content">
+                            <div class="step__number">
+                                <img src="./img/02.png" alt="step2">
+                                <span class="title">Write & Understand</span>
+                            </div>
+                            <div class="step__text">Write, draw, reflect, understand. Alivio will guide you through the
+                                prompts and will help you manage your stress!</div>
+                            <div class="step__image"><img src="./img/Understand.png" alt="Understand"
+                                    class="step__image">
+                            </div>
+                        </div>
+                    </div>
+                    <!--  flex-element  -->
+                    <div class="step__element step__element_3">
+                        <!--  content  -->
+                        <div class="step__content">
+                            <div class="step__number">
+                                <img src="./img/03.png" alt="step3">
+                                <span class="title">Alivio!</span>
+                            </div>
+                            <div class="step__text">Now you are aware, and have a way to manage and overcome your own
+                                stress.
+                                What are you waiting for? Alivio today!</div>
+                            <div class="step__image"><img src="./img/Personalize.png" alt="Personalize"
+                                    class="step__image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page3">
+            <!--  parent -->
+            <div class="community">
+                <!--  flex-container  -->
+                <div class="community__row">
+                    <!--  flex-element  -->
+                    <div class="community__element community__element_1">
+                        <!--  content  -->
+                        <div class="community__content">
+                            <div class="community__page__title">
+                                <h3>Let's hear about Kayla's success story</h3>
+                            </div>
+                            <div class="community__page__text">See how well Alivio works in a real customer’s life.
+                            </div>
+                            <button class="send_me" name="send" type="button">Let’s get started</button>
+                        </div>
+                    </div>
+                    <!--  flex-element  -->
+                    <div class="community__element community__element_2">
+                        <!--  content  -->
+                        <div class="community__content">
+                            <iframe width="600" height="300" src="https://www.youtube.com/embed/3aLbX45Uy5w"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page4">
+            <!--  parent -->
+            <div class="our__product">
+                <!--  flex-container  -->
+                <div class="our__product__row">
+                    <!--  flex-element  -->
+                    <div class="our__product__element our__product__element_1">
+                        <!--  content  -->
+                        <div class="our__product__content">
+                            <div class="our__product__page__title">
+                                <h3>You tell us your stress,
+                                    We make your diary</h3>
+                            </div>
+                            <div class="our__product__page__text">Everyone experiences it, and in different ways.
+                                Let Alivio guide you, in a personalized journal experience, to overcome your stress.
+                            </div>
+                            <button class="send_me" name="send" type="button">Find Your Way</button>
+                        </div>
+                    </div>
+
+                    <div class="slider">
+                        <div class="slider-line">
+                            <img src="./img/slide1.png" alt="First slide">
+                            <div class="sliderText">Title 1</div>
+                        </div>
+
+                        <div class="slider-line">
+                            <img src="./img/slide2.png" alt="Second slide">
+                            <div class="sliderText">Title 2</div>
+                        </div>
+
+                        <div class="slider-line">
+                            <img src="./img/slide3.png" alt="Third slide">
+                            <div class="sliderText">Title 3</div>
+                        </div>
+
+                        <div class="slider-line">
+                            <img src="./img/slide4.png" alt="Thourd slide">
+                            <div class="sliderText">Title 4</div>
+                        </div>
+
+                        <a class="prev" onclick="prevSlide()">&#10094;</a>
+                        <a class="next" onclick="nextSlide()">&#10095;</a>
+
+                        <div class="slider-dots">
+                            <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page5">
+            <!--  parent -->
+            <div class="block">
+                <!--  flex-container  -->
+                <div class="block__row">
+                    <!--  flex-element  -->
+                    <div class="block__element block__element_1">
+                        <!--  content  -->
+                        <div class="block__content">
+                            <form action="https://formspree.io/f/xayagoyk" method="POST" class=" decor">
+                                <div class="form-left-decoration"></div>
+                                <div class="form-right-decoration"></div>
+                                <div class="circle"></div>
+                                <div class="form-inner">
+                                    <h3>Contact us</h3>
+                                    <input name="name" type="text" placeholder="Username">
+                                    <input type="email" name="email" placeholder="Email">
+                                    <textarea name="massage" placeholder="Message..." rows="3"></textarea>
+                                    <button class="submit">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!--  parent -->
+        <div class="block_3" id="link">
+            <!--  flex-container  -->
+            <div class="block__row_3">
+                <!--  flex-element  -->
+                <div class="footer__element footer__element_1">
+                    <!--  content  -->
+                    <div class="footer__content">
+                        <a href="viber://chat?number=+380678907554"><img src="img/viber.svg" alt="viber"></a>
+                        <h3>Viber</h3>
+                    </div>
+                </div>
+                <!--  flex-element  -->
+                <div class="footer__element footer__element_2">
+                    <!--  content  -->
+                    <div class="footer__content">
+                        <a href="https://t.me/yarkurnikov"><img src="img/telegram.svg" alt="telegram"></a>
+                        <h3>Telegram</h3>
+                    </div>
+                </div>
+                <!--  flex-element  -->
+                <div class="footer__element footer__element_3">
+                    <!--  content  -->
+                    <div class="footer__content">
+                        <a href="https://www.linkedin.com/in/yaroslav-kurnykov-1abb5a201/"><img src="img/linkedin.svg"
+                                alt="linkedin"></a>
+                        <h3>LinkedIn</h3>
+                    </div>
+                </div>
+                <!--  flex-element  -->
+                <div class="footer__element footer__element_4">
+                    <!--  content  -->
+                    <div class="footer__content">
+                        <a href="https://www.instagram.com/yarkurnikov/"><img src="img/instagram.svg"
+                                alt="instagram"></a>
+                        <h3>Instagram</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
